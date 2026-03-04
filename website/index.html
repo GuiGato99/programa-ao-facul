@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serginho Automóveis | Veículos Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #d4af37;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('img/loja.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.btn {
+  padding: 14px 32px;
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d4af37;
+  color: #000;
+}
+
+/* SECTION */
+.section {
+  padding: 100px 60px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #d4af37;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.price {
+  color: #d4af37;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.about img {
+  flex: 1;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* CONTACT */
+.contact-box {
+  background: #1a1a1a;
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contact-box p {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px) {
+
+  header {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .section {
+    padding: 80px 20px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SERGINHO AUTOMÓVEIS</div>
+  <nav>
+    <a href="#estoque">Estoque</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Excelência em Veículos Premium</h1>
+    <p>Qualidade, procedência e confiança em cada negociação.</p>
+    <a href="#estoque" class="btn">Ver Estoque</a>
+  </div>
+</section>
+
+<!-- ESSA É A PARTE QUE EDITO CASO QUEIRA COLOCAR OUTRO CARRO -->
+<section id="estoque" class="section">
+
+  <h2 class="section-title">Veículos em Destaque</h2>
+  <div class="grid">
+  <!-- EXEMPLO PARA ADICIONAR CARRO
+
+    <a href="NOME DA PAGINA DO CARRO" class="card">
+      <img src="img/nome_da_imagem">
+      <div class="card-content">
+        <h3>NOME DO CARRO</h3>
+        <p>DDESCRIÇÃO DO CARRO</p>
+        <div class="price">PREÇO DO CARRO</div>
+      </div>
+    </a>
+
+ -->
+    <a href="pages/bmw.html" class="card">
+      <img src="img/bmw.webp">
+      <div class="card-content">
+        <h3>BMW 2021</h3>
+        <p>Turbo, teto solar, único dono.</p>
+        <div class="price">R$ 220.000</div>
+      </div>
+    </a>
+
+    <a href="pages/maclaren.html" class="card">
+      <img src="img/maclaren.jpg">
+      <div class="card-content">
+        <h3>McLaren 2023</h3>
+        <p>0km, garantia de fábrica.</p>
+        <div class="price">R$ 280.000</div>
+      </div>
+    </a>
+    <!-- COLAR AQUI! -->
+    <a href="pages/tcross.html" class="card">
+      <img src="img/tcross.jpeg">
+      <div class="card-content">
+        <h3>T-Cross 2022</h3>
+        <p>Completo, automático, ótimo estado.</p>
+        <div class="price">R$ 120.000</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+<!-- FINAL DA PARTE DOS CARROS -->
+
+<section id="sobre" class="section">
+  <h2 class="section-title">Sobre Nós</h2>
+  <div class="about">
+    <div class="about-text">
+      <p>Localizada em Votuporanga-SP, a Serginho Automóveis atua com seriedade e transparência na comercialização de veículos selecionados.</p>
+      <p>Oferecemos compra, venda, troca e financiamento com as melhores condições da região.</p>
+      <p><strong>Horário:</strong> Segunda a Sexta das 8h às 18h | Sábado das 8h às 12h</p>
+    </div>
+    <img src="img/loja.jpg">
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <h2 class="section-title">Contato</h2>
+  <div class="contact-box">
+    <p><strong>Endereço:</strong> Rua Dr Wilson de Souza Foz, 4704 - Votuporanga/SP</p>
+    <p><strong>Telefone / WhatsApp:</strong> (17) 99613-5533</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Serginho Automóveis - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
