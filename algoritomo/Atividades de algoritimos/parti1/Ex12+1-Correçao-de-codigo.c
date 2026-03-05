@@ -1,3 +1,22 @@
+// #include <stdio.h> 
+//#include <stdlib.h>
+// main() 
+//{ int idade; printf ("Digite a sua idade\n"); 
+//scanf("%f", &idade); 
+//if(idade <= 12){
+ //printf("Voce tem %f e eh uma criança\n, idade");} 
+ //if(idade <= 19);{
+ // printf("Voce tem %f e eh um adolescente\n", idade);} 
+ //if(idade <= 60);{ 
+ //printf("Voce tem %f e eh um adulto\n", idade);} 
+ //else{ 
+ //printf("Voce tem %f e eh um idoso\n, idade"); } 
+ //......Codigo Errado... //
+
+
+
+//.... Codigo corrigido ....//
+
 #include <stdio.h>
 
 int main() {

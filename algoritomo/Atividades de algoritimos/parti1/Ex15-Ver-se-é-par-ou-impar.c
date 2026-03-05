@@ -18,3 +18,9 @@ int main() {
 
     return 0;
 }
+//...Alternativa correta...//
+//...(a)float; f;f; par; =; f; impar 
+//...(b) float; f; f; impar; !; f; par 
+//...(c) int; d; d; impar; !; d; par 
+//...(d) int; d; d; par; =; d; impar 
+//...(e) int; d; d; par; !; d; impar (x) Alternativa correta 
