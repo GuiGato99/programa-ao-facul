@@ -6,7 +6,7 @@ int main( ){
     } else if (idade >= 12 && idade < 18 ){
         printf("adolesente");
     }else{
-        prinft("criança");
+        printf("criança");
     }
 
 }
